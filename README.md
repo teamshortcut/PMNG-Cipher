@@ -18,6 +18,7 @@ I | L
 _**J**_ | _**Q**_
 K | K
 L | M
+M | R
 N | T
 O | W
 P | B
