@@ -9,7 +9,7 @@ Plaintext | Ciphertext
 A | O
 B | V
 _**C**_ | _**K**_
-D | g
+D | G
 E | Y
 _**F**_ | _**F**_
 _**G**_ | _**Q**_
