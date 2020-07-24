@@ -1,6 +1,8 @@
 # PMNG-Cipher
 Polymapping N-gram cipher.
 
+This cipher was used as part a challenge in Cyber Discovery's "Content Creators Club CTF", `CH06`. You can see [writeup.md](writeup.md) for a writeup of this challenge, which also serves of a usage example for this cipher.
+
 ## Algorithm
 The cipher is a substituion cipher with three additions. The first is that some plaintext characters encrypt to the same ciphertext character. As a result, when decrypting, some characters have two possible plaintext counterparts. These are indicated in bold and italics in the table below.
 
