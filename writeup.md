@@ -18,15 +18,15 @@ The challenge had 3 successive hints.
 
 ## Walkthrough
 
-There are several ways to approach this challenge, but one possible walkthrough is outlined here. The full algorithm for this cipher is detailed in [README.md](README.md).
+There are several ways to approach this challenge, but one possible walkthrough is outlined here. The full algorithm for this cipher is detailed in [README.md](README.md). The challenge can benefit from scripting or online tools, but can equally done entirely with pen and paper.
 
-First, notice that the text is already spaced as if natural language. For now, it is easier to ignore the numbers. You can work this out by seeing the differing numbers on the end of `FLC`, by seeing that intuitive solutions using the numbers (a ROT shift for example) do not yield any results, or from the first hint.
+First, note that the text is already spaced like natural language. For now, it is easier to ignore the numbers. You can work this out by seeing the differing numbers on the end of `FLC`, by seeing that intuitive solutions using the numbers (a ROT shift for example) do not yield any results, or from the first hint.
 
 The next step is to check the entropy of the text, or perform a frequency analysis of the text. This shows that the text _appears_ to be regular English text, put through a monoalphabetic cipher. (this is half right!)
 
 A logical next step is to run the text through automated online substitution cipher solvers, which will fail to return any meaningful text, indicating that the cipher is more complex. The easiest place to start is to look at the word `AY-KOMKXMOPY` as it is hyphenated.
 
-As the word is hyphenated, we can deduce some likely two-letter prefixes in English. Looking at the length of the word and pattern of the letters in it, you can deduce/enumerate potential candidates. This can be done manually (the whole challenge is doable with just a pen and paper!), with a script, or even online tools like a crossword solver! Using this information, we can deduce that this word is probably `re-calculate`.
+As the word is hyphenated, we can deduce some likely two-letter prefixes in English. Using the frequency analysis, trying different prefixes, and looking at the length of the word and pattern of the letters in it, you can deduce/enumerate potential candidates. This can be done manually, with a script, or even online tools like a crossword solver! This process reveals `re-calculate` as the most likely candidate.
 
 Going off this assumption, we can fill in some of the rest of the ciphertext. Using a similar approach and combining the techniques and knowledge from before, we can try and deduce other letters and/or words. At this point though, it will become clear that this alphabet cannot be entirely consistent with proper English words. It's not possible to form proper English words with a typical mono-alphabetic approach, but a lot of words can be approximated.
 
